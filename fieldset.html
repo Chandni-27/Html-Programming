@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+    <head><tittle>legend fieldset tag</tittle>
+        <style>
+            #fieldSet{
+                border-top: 2px double green;
+                border-bottom: 2px double green;
+                border-left: 2px dotted green;
+                border-right: 2px dotted green;
+                border-radius: 0px 10px 0px 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <fieldset id="fieldSet"
+        
+         ><legend>personal group</legend>
+            F name:<input type="text"name="first name" id="fname" style="color:green ;">
+            last name:<input type="text" name="last name" id="lname" style="color:green;">
+        </fieldset>
+        <button type="button" title="Submit" onclick="ShowName()">Submit</button>
+        <script>
+            function ShowName(){
+            var fname=document.getElementById("fname").value;
+            var lname=document.getElementById("lname").value;
+             
+            if(lname !=null && fname != null)
+            {
+                alert("Your name is "+fname+" "+lname);
+            }
+        }
+            </script>
+    </body>
+</html>
